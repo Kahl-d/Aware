@@ -1,0 +1,48 @@
+# Core ML and Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Transformers and NLP
+transformers>=4.20.0
+tokenizers>=0.13.0
+datasets>=2.10.0
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.21.0
+scikit-learn>=1.1.0
+scikit-multilearn>=0.2.0
+
+# Visualization and Logging
+matplotlib>=3.5.0
+seaborn>=0.11.0
+tensorboard>=2.10.0
+wandb>=0.13.0
+
+# Utilities
+tqdm>=4.64.0
+pyyaml>=6.0
+python-dotenv>=0.19.0
+click>=8.1.0
+
+# Document Processing
+python-docx>=0.8.11
+
+# Jupyter and Development
+jupyter>=1.0.0
+ipykernel>=6.15.0
+notebook>=6.4.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Code Quality
+black>=22.0.0
+flake8>=5.0.0
+isort>=5.10.0
+
+# Optional: GPU Support
+# Install CUDA version if using GPU:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 
