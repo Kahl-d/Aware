@@ -12,15 +12,23 @@
 
 **Aware** is an innovative framework designed to automatically identify Cultural Capital Themes in student essays, particularly within STEM classrooms. Based on Yosso's (2005) framework of community cultural wealth, this system recognizes 11 distinct cultural capital themes that students bring to educational settings.
 
-### 🎯 Problem Statement
+---
 
-Identifying Cultural Capital themes in student essays presents unique challenges:
-- **Context Dependency**: Meaning depends on surrounding narrative
-- **Subtle Expressions**: Themes are often implied rather than explicit
-- **Theme Overlap**: Multiple themes can co-occur in single sentences
-- **Domain Specificity**: Student essay language differs from general text
+## 🏗️ Visual Architecture & Approaches
 
-### 🚀 Solution: The "Aware" Framework
+### 1. Base Sentence-Level Classification
+
+![Base Classification Architecture](base_cls.png)
+*Figure 1: Standard transformer-based sentence-level classification. Each sentence is processed independently using a pre-trained model (e.g., DeBERTa-v3-large) and classified for multiple cultural capital themes.*
+
+### 2. Essay-Aware Contextual Classification
+
+![Essay-Aware Architecture](essay_aware.png)
+*Figure 2: Essay-aware architecture. The entire essay is processed as a single sequence, with attention pooling and BiLSTM layers capturing inter-sentence context for more accurate theme identification.*
+
+---
+
+## 🚀 Solution: The "Aware" Framework
 
 Our framework addresses these challenges through three key components:
 
@@ -131,6 +139,8 @@ aware/
 ├── 📄 LICENSE                   # MIT License
 ├── 📄 .gitignore               # Git ignore file
 ├── 📄 Aware-Paper.docx         # Research paper
+├── base_cls.png
+├── essay_aware.png
 │
 ├── 🔧 multi-base/              # Base model implementation
 │   ├── base_model.py           # Standard sentence-level classification
